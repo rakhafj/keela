@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    
+    <!-- Your custom styles (optional) -->
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <style type="text/css">
+        body{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            background-color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .nav-link {
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+        nav li.nav-item .nav-link.active {
+            color: #e87072 !important;
+        }
+
+        nav .nav-link:hover {
+            color: #e87072 !important;
+        }
+
+        .jumbotron {
+            background: url("https://static.wixstatic.com/media/faa047_9d01b501b8124488badcc93565f0cb04~mv2.jpg") center no-repeat;
+            height: 50%;
+            background-size: cover;
+            width: 100%;
+        }
+
+        .pills .nav-item .nav-link {
+            color: #4B515D;
+            background-color: transparent;
+            border: 0;
+
+        }
+
+        .pills .nav-item .nav-link:hover {
+            background-color: lightgrey;
+            background-clip: content-box;
+            border: 0;
+        }
+
+        .pills .nav-item .nav-link.active {
+            background-color: darkgrey;
+            background-clip: content-box;
+            border: 0;
+        }
+
+        .profile-image {
+            width: 40vh;
+            height: 30vh;
+            margin-left: 10%;
+
+        }
+
+        .profile-image-m {
+            width: 120px;
+            height: 120px;
+            padding: 1px;
+            margin: auto auto;
+        }
+
+        .fa-heart {
+            color: #e87072;
+        }
+
+        .hati i{
+            padding-left: 3px;
+        }
+
+        .hati-m{
+            width: 60%;
+        }
+        .hati-m i{
+            padding-left: 2px;
+        }
+        .hati-r i{
+            padding-left: 2px;
+            padding-right: 1px;
+        }
+
+
+        @media only screen and (max-width: 991px) {
+            .website {
+                display: none;
+            }
+            #left {
+                left: -20%;
+                padding: 5px 10px;
+                background-color: #e87072;
+            }
+
+            #left i,
+            #right i {
+                color: white;
+            }
+
+            #right {
+                right: -20%;
+                padding: 5px 10px;
+                background-color: #e87072;
+            }
+
+            .controls {
+                position: relative;
+                top: -7em;
+            }
+
+            .carousel img {
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .mobile {
+                display: none;
+            }
+
+            .nav-link {
+                font-size: .9rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+
+            #left {
+                left: -4%;
+                padding: 5px 10px;
+                background-color: #e87072;
+            }
+
+            #left i,
+            #right i {
+                color: white;
+            }
+
+            #right {
+                right: -4%;
+                padding: 5px 10px;
+                background-color: #e87072;
+            }
+
+            .controls {
+                position: relative;
+                top: -7em;
+            }
+
+            .carousel img {
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-link {
+                font-size: .8rem;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand mx-5" href="#">
+            <img src="img/logo.png" width="150vh">
+        </a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link mx-1" href="#">HOME
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-1" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active mx-1" href="#">MAKEUP ARTIST</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-1" href="#">BLOG</a>
+            </li>
+        </ul>
+        <!-- Links -->
+
+        <button type="button" class="btn btn-sm btn-outline-elegant mr-1">Register</button>
+        <button type="button" class="btn btn-sm btn-elegant mr-4">Login</button>
+
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<!-- .Header -->
+<div class="website">
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container">
+            <h1 class="pt-5 pb-5 h1-responsive" style="color: white;">STYLE IS A CHOICE.
+                <br> MAKE YOURS. </h1>
+            </div>
+        </div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified pills clearfix grey lighten-4" style="padding-left: 5%; padding-right: 5%;">
+            <li class="col-lg-3 mx-3">
+                <p class="mx-4 my-3 pl-3" style="color: #2E2E2E; font-weight: bold;">ABOUT MAKEUP ARTIST</p>
+            </li>
+            <li class="nav-item my-auto col-lg-4 px-3">
+                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">PROFILE</a>
+            </li>
+            <li class="nav-item my-auto col-lg-4 px-3">
+                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">PRICE LIST</a>
+            </li>
+            <li class="nav-item my-auto col-lg-4 pr-5">
+                <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">REVIEW</a>
+            </li>
+        </ul>
+        <!--/ .Header -->
+
+        <!-- .Main -->
+        <div class="container">
+
+            <!--Section: Personal card-->
+            <section class="pt-3 mt-3 pb-3">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-2 col-lg-3">
+
+                        <!--Card-->
+                        <div class="card card-personal" style="border: 2px silver solid; border-radius: 1px; box-shadow: none;">
+
+                            <!--Card image-->
+                            <div class="col-xl-7 mx-auto mt-4">
+                                <img class="img-fluid rounded-circle" src="https://yt3.ggpht.com/-s6zMFbmWEkE/AAAAAAAAAAI/AAAAAAAAAAA/rITQsJclzKo/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                alt="Card image cap">
+                                <h6 class="my-2" style="font-family: 'Montserrat', sans-serif; letter-spacing: 1px;">Lacita Alysia</h6>
+                                <div class="row mx-2 mt-1 hati">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                            <!--Card image-->
+
+                            <!--Card content-->
+                            <div class="card-body" style="padding-right: 0; padding-left: 0;">
+                                <div class="streak streak-sm elegant-color">
+                                    <ul style="list-style: none; padding-left: 7%;">
+                                        <li style="">
+                                            <h4 class="font-bold" style="color: white; font-size: 1.2rem;">Profile :</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--Title-->
+                                <!-- <a><h4 class="card-title title-one">Clara</h4></a>
+                                <p class="card-meta">Joined in 2013</p> -->
+
+                                <!--Text-->
+                                <p class="card-text" style="padding-left: 1em; padding-right: 1em;">Clara is an photographer living in Madrid.</p>
+
+                                <div class="streak streak-sm elegant-color">
+                                    <ul style="list-style: none; padding-left: 7%;">
+                                        <li style="">
+                                            <h4 class="font-bold" style="color: white; font-size: 1.2rem;">Detail Location :</h4>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <p class="card-text" style="padding-left: 1em; padding-right: 1em;">Clara is an photographer living in Madrid.</p>
+
+                                <!-- <a class="card-meta"><span><i class="fa fa-user"></i>22 Friends</span></a> -->
+                            </div>
+                            <!--Card content-->
+
+                        </div>
+                        <!--Card-->
+
+                        <!--Card-->
+                        <div class="pt-4">
+                            <div class="card card-personal" style="border: 1px grey solid; border-radius: 2px; box-shadow: none;">
+
+                                <!--Card content-->
+                                <div class="card-body pt-0" style="padding-right: 0; padding-left: 0;">
+                                    <div class="streak streak-sm elegant-color">
+                                        <ul style="list-style: none; padding-left: 7%;">
+                                            <li style="">
+                                                <h4 class="font-bold" style="color: white; font-size: 1.2rem;">Contact :</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!--Title-->
+                                    <!-- <a><h4 class="card-title title-one">Clara</h4></a>
+                                    <p class="card-meta">Joined in 2013</p> -->
+
+                                    <!--Text-->
+                                    <p class="card-text" style="padding-left: 1em; padding-right: 1em;">Clara is an photographer living in Madrid.</p>
+
+                                    <div class="streak streak-sm elegant-color">
+                                        <ul style="list-style: none; padding-left: 7%;">
+                                            <li style="">
+                                                <h4 class="font-bold" style="color: white; font-size: 1.2rem;">Social Media :</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <p class="card-text" style="padding-left: 1em; padding-right: 1em;">Clara is an photographer living in Madrid.</p>
+
+                                    <!-- <a class="card-meta"><span><i class="fa fa-user"></i>22 Friends</span></a> -->
+                                </div>
+                                <!--Card content-->
+
+                            </div>
+                        </div>
+                        <!--Card-->
+                    </div>
+
+                    <!-- Tab panels -->
+                    <div class="tab-content card col-lg-6 col-lg-9" style="box-shadow: none;">
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+
+                            <!--Section: Blog v.2-->
+                            <section class="section extra-margins px-0 text-center pb-0">
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-lg-4 col-md-12 mb-4 px-0">
+                                        <!--Featured image-->
+                                        <div class="view overlay hm-white-slight mb-0">
+                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8ILMCNziGLUe8oay_H_24vVUl3zdN61vh-iRg_2e_XBPT7SI"
+                                         class="img-fluid profile-image z-depth-1" alt="First sample image">
+                                         <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0 ">
+                                        <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                        class="img-fluid profile-image z-depth-1" alt="Second sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0 ">
+                                        <img src="http://res.cloudinary.com/sisternet-co-id/image/upload/v1487602852/article/ggljbsvtvmwvlzf8ln8r.jpg" class="img-fluid profile-image z-depth-1"
+                                        alt="Thrid sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                        </section>
+                        <!--Section: Blog v.2-->
+
+                        <!--Section: Blog v.2-->
+                        <section class="section extra-margins px-0 text-center pb-0">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-12 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8ILMCNziGLUe8oay_H_24vVUl3zdN61vh-iRg_2e_XBPT7SI" class="profile-image img-fluid z-depth-1"
+                                        alt="First sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0 ">
+                                        <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                        class="img-fluid profile-image z-depth-1" alt="Second sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0 ">
+                                        <img src="http://res.cloudinary.com/sisternet-co-id/image/upload/v1487602852/article/ggljbsvtvmwvlzf8ln8r.jpg" class="img-fluid profile-image z-depth-1"
+                                        alt="Thrid sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                        </section>
+                        <!--Section: Blog v.2-->
+
+                        <!--Section: Blog v.2-->
+                        <section class="section extra-margins text-center pb-0">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-12 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8ILMCNziGLUe8oay_H_24vVUl3zdN61vh-iRg_2e_XBPT7SI" class="profile-image img-fluid z-depth-1"
+                                        alt="First sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0 ">
+                                        <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                        class="img-fluid profile-image z-depth-1" alt="Second sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-lg-4 col-md-6 mb-4 px-0">
+                                    <!--Featured image-->
+                                    <div class="view overlay hm-white-slight mb-0 ">
+                                        <img src="http://res.cloudinary.com/sisternet-co-id/image/upload/v1487602852/article/ggljbsvtvmwvlzf8ln8r.jpg" class="img-fluid profile-image z-depth-1"
+                                        alt="Thrid sample image">
+                                        <a>
+                                            <div class="mask"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <button class="btn btn-md btn-primary" style="background-color: #e87072;">Load More</button>
+
+                        </section>
+                        <!--Section: Blog v.2-->
+
+                    </div>
+                    <!--/.Panel 1-->
+
+                    <!--Panel 2-->
+                    <div class="tab-pane fade " id="panel2" role="tabpanel" style="border: 2px silver solid; padding: 1rem;">
+                        <div class="container mx-5 my-5">
+
+                            <div class="row mb-3">
+
+                                <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+                                        <!-- Accordion card -->
+                                        <div class="card">
+
+                                            <!-- Card header -->
+                                            <div class="card-header" role="tab" id="headingOne" style="background-color: #7acad1;">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    <h5 class="mb-0" style="color: white;">
+                                                        Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                    </h5>
+                                                </a>
+                                            </div>
+
+                                            <!-- Card body -->
+                                            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="card-body">
+                                                    <h6>make up + hair</h6>
+                                                    <h3 class="my-3"> 1.000.000</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                    </div>
+                                    <!--/.Accordion wrapper-->
+
+                                </div>
+
+                                <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion" id="accordionEx2" role="tablist" aria-multiselectable="true">
+
+                                        <!-- Accordion card -->
+                                        <div class="card">
+
+                                            <!-- Card header -->
+                                            <div class="card-header" role="tab" id="headingTwo" style="background-color: #7acad1;">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2" href="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0" style="color: white;">
+                                                        Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                    </h5>
+                                                </a>
+                                            </div>
+
+                                            <!-- Card body -->
+                                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="card-body">
+                                                    <h6>make up + hair</h6>
+                                                    <h3 class="my-3"> 1.000.000</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                    </div>
+                                    <!--/.Accordion wrapper-->
+
+                                </div>
+
+                            </div>
+
+                            <div class="row mb-3">
+
+                                <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+                                        <!-- Accordion card -->
+                                        <div class="card">
+
+                                            <!-- Card header -->
+                                            <div class="card-header" role="tab" id="headingThree" style="background-color: #7acad1;">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    <h5 class="mb-0" style="color: white;">
+                                                        Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                    </h5>
+                                                </a>
+                                            </div>
+
+                                            <!-- Card body -->
+                                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="card-body">
+                                                    <h6>make up + hair</h6>
+                                                    <h3 class="my-3"> 1.000.000</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                    </div>
+                                    <!--/.Accordion wrapper-->
+
+                                </div>
+
+                                <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+
+                                        <!-- Accordion card -->
+                                        <div class="card">
+
+                                            <!-- Card header -->
+                                            <div class="card-header" role="tab" id="headingFour" style="background-color: #7acad1;">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    <h5 class="mb-0" style="color: white;">
+                                                        Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                    </h5>
+                                                </a>
+                                            </div>
+
+                                            <!-- Card body -->
+                                            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                <div class="card-body">
+                                                    <h6>make up + hair</h6>
+                                                    <h3 class="my-3"> 1.000.000</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion card -->
+                                    </div>
+                                    <!--/.Accordion wrapper-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Panel 2-->
+
+                    <!--Panel 3-->
+                    <div class="tab-pane fade" id="panel3" role="tabpanel" style="border: 2px silver solid; padding: 1rem;">
+                        <div class="container">
+                            <!--Section: Social newsfeed v.2-->
+                            <section class="pb-3">
+
+                                <!--Grid row-->
+                                <div class="row">
+
+                                    <!--Grid column-->
+                                    <div class="col-lg-10">
+
+                                        <!--Newsfeed-->
+                                        <div class="mdb-feed">
+
+                                            <!--news-->
+                                            <div class="news">
+
+                                                <!--Label-->
+                                                <div class="row">
+                                                    <div class="label">
+                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                    </div>
+
+                                                    <!--Excert-->
+                                                    <div class="excerpt">
+
+                                                        <!--Brief-->
+                                                        <div class="brief mx-4">
+                                                            <a class="name">Lili Rose</a>
+                                                            <div class="date">2 days ago</div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="ml-auto">
+                                                        <p style="font-weight: bold;">Rating</p>
+                                                        <div class="row ml-auto hati">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--Added text-->
+                                                <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+                                                <!--Feed footer-->
+                                            </div>
+                                            <!--news-->
+                                            <hr class="mb-5">
+
+                                            <!--news-->
+                                            <div class="news">
+
+                                                <!--Label-->
+                                                <div class="row">
+                                                    <div class="label">
+                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                    </div>
+
+                                                    <!--Excert-->
+                                                    <div class="excerpt">
+
+                                                        <!--Brief-->
+                                                        <div class="brief mx-4">
+                                                            <a class="name">Lili Rose</a>
+                                                            <div class="date">2 days ago</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ml-auto">
+                                                        <p style="font-weight: bold;">Rating</p>
+                                                        <div class="row ml-auto hati">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <!--Added text-->
+                                                <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+                                                <!--Feed footer-->
+                                            </div>
+                                            <!--news-->
+                                            <hr class="mb-5">
+
+                                            <!--news-->
+                                            <div class="news">
+
+                                                <!--Label-->
+                                                <div class="row">
+
+                                                    <div class="label">
+                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                    </div>
+
+                                                    <!--Excert-->
+                                                    <div class="excerpt">
+
+                                                        <!--Brief-->
+                                                        <div class="brief mx-4">
+                                                            <a class="name">Lili Rose</a>
+                                                            <div class="date">2 days ago</div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="ml-auto">
+                                                        <p style="font-weight: bold;">Rating</p>
+                                                        <div class="row ml-auto hati">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--Added text-->
+                                                <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+                                                <!--Feed footer-->
+                                            </div>
+                                            <!--news-->
+                                            <hr class="mb-5">
+
+                                            <!--news-->
+                                            <div class="news mb-5">
+
+                                                <!--Label-->
+                                                <div class="row">
+
+                                                    <div class="label">
+                                                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                    </div>
+
+                                                    <!--Excert-->
+                                                    <div class="excerpt">
+
+                                                        <!--Brief-->
+                                                        <div class="brief mx-4">
+                                                            <a class="name">Lili Rose</a>
+                                                            <div class="date">2 days ago</div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="ml-auto">
+                                                        <p style="font-weight: bold;">Rating</p>
+                                                        <div class="row ml-auto hati">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!--Added text-->
+                                                <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+
+
+                                                <!--Feed footer-->
+                                            </div>
+                                            <!--news-->
+
+                                        </div>
+                                        <!--Newsfeed-->
+
+                                    </div>
+                                    <!--Grid column-->
+
+                                </div>
+                                <!--Grid row-->
+
+                            </section>
+                            <!--Section: Social newsfeed v.2-->
+
+                        </div>
+
+                    </div>
+                    <!--/.Panel 3-->
+                </div>
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!--Section: Personal card-->
+        
+
+    </div>
+</div>
+
+<div class="mobile">
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container">
+            <h1 class="pt-5 pb-5 h1-responsive" style="color: white;">STYLE IS A CHOICE.
+                <br> MAKE YOURS. </h1>
+            </div>
+        </div>
+        <div class="col-7 mx-auto" style="margin-top: -20%;">
+            <div style="padding: 5px;  border-radius: 50%; background-color: white;">
+                <img class="img-fluid rounded-circle z-depth-1" src="https://yt3.ggpht.com/-s6zMFbmWEkE/AAAAAAAAAAI/AAAAAAAAAAA/rITQsJclzKo/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                alt="Card image cap">
+            </div>
+            <h5 class="my-2" style="font-family: 'Montserrat', sans-serif; letter-spacing: 1px; text-align: center;">Lacita Alysia</h5>
+            <div class="row hati-m mx-auto">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="far fa-heart" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <hr style="height: .2px !important; background-color: #353333 !important;">
+
+        <div class="container">
+            <div class="container my-2">
+                <h5 style="color: #2E2E2E; font-weight: bold;">Profile :</h5>
+                <p>Hello ! i'm lLacita, Certified MUA X Beauty Blogger since December 2016. If have some question feel free
+                    to contact me</p>
+
+                    <h5 style="color: #2E2E2E; font-weight: bold;" class="my-auto">Detail Location :</h5>
+                    <p>Jalan Soekarno Hatta, Perumahan Griyasanta Blok E-209 Lowokwaru, Malang</p>
+
+                    <h5 style="color: #2E2E2E; font-weight: bold;" class="my-auto">Contact :</h5>
+                    <p style="display: inline;">Phone : </p>
+                    <p style="display: inline;">(0341) 72797447</p>
+                    <br>
+                    <p style="display: inline;">Whatsapp : </p>
+                    <p style="display: inline;">0856 7654 7554</p>
+                    <br>
+                    <p style="display: inline;">Instagram : </p>
+                    <p style="display: inline;">Lacita Alysia MUA</p>
+                    <br>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified pills clearfix grey lighten-4">
+                <li class="nav-item mx-auto my-auto">
+                    <a class="nav-link active" data-toggle="tab" href="#panel1-m" role="tab">PROFILE</a>
+                </li>
+                <li class="nav-item mx-auto my-auto">
+                    <a class="nav-link" data-toggle="tab" href="#panel2-m" role="tab">PRICE LIST</a>
+                </li>
+                <li class="nav-item mx-auto my-auto">
+                    <a class="nav-link" data-toggle="tab" href="#panel3-m" role="tab">REVIEW</a>
+                </li>
+            </ul>
+
+            <div class="tab-content card col-lg-6 col-lg-9" style="box-shadow: none;">
+                <!--Panel 1-->
+                <div class="tab-pane fade in show active mt-3" id="panel1-m" role="tabpanel">
+
+                    <!--Section: Blog v.2-->
+                    <section class="section extra-margins px-0 text-center pb-0">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 col-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8ILMCNziGLUe8oay_H_24vVUl3zdN61vh-iRg_2e_XBPT7SI"
+                                    class="img-fluid profile-image-m z-depth-1" alt="First sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 col-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0 ">
+                                    <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                    class="img-fluid profile-image-m z-depth-1" alt="Second sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0 ">
+                                    <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                    class="img-fluid profile-image-m z-depth-1" alt="Second sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+                        <!--Grid column-->
+
+                        <!--Grid row-->
+
+                    </section>
+                    <!--Section: Blog v.2-->
+
+                    <!--Section: Blog v.2-->
+                     <section class="section extra-margins px-0 text-center pb-0">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 col-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8ILMCNziGLUe8oay_H_24vVUl3zdN61vh-iRg_2e_XBPT7SI"
+                                    class="img-fluid profile-image-m z-depth-1" alt="First sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 col-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0 ">
+                                    <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                    class="img-fluid profile-image-m z-depth-1" alt="Second sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0 ">
+                                    <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                    class="img-fluid profile-image-m z-depth-1" alt="Second sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+                        <!--Grid column-->
+
+                        <!--Grid row-->
+
+                    </section>
+                    <!--Section: Blog v.2-->
+
+                    <!--Section: Blog v.2-->
+                     <section class="section extra-margins px-0 text-center pb-0">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 col-4 mb-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8ILMCNziGLUe8oay_H_24vVUl3zdN61vh-iRg_2e_XBPT7SI"
+                                    class="img-fluid profile-image-m z-depth-1" alt="First sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 col-4 mb-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0 ">
+                                    <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                    class="img-fluid profile-image-m z-depth-1" alt="Second sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-4 mb-4 px-0">
+                                <!--Featured image-->
+                                <div class="view overlay hm-white-slight mb-0 ">
+                                    <img src="https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/c0.135.1080.1080/21911383_108778379872621_7509167971030269952_n.jpg?ig_cache_key=MTYxMTYwMDA2MTE1MzU4NDA3NA%3D%3D.2.c"
+                                    class="img-fluid profile-image-m z-depth-1" alt="Second sample image">
+                                    <a>
+                                        <div class="mask"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>  
+                        <!--Grid column-->
+
+                        <!--Grid row-->
+
+                    </section>
+                    <!--Section: Blog v.2-->
+
+                </div>
+                <!--/.Panel 1-->
+
+                <!--Panel 2-->
+                <div class="tab-pane fade " id="panel2-m" role="tabpanel">
+                    <div class="container my-5">
+
+                        <div class="row mb-3">
+
+                            <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                <!--Accordion wrapper-->
+                                <div class="accordion" id="accordionEx1-m" role="tablist" aria-multiselectable="true">
+
+                                    <!-- Accordion card -->
+                                    <div class="card">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="headingOne" style="background-color: #7acad1;">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1-m" href="#collapseOne-m" aria-expanded="false" aria-controls="collapseOne-m">
+                                                <h5 class="mb-0" style="color: white;">
+                                                    Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                </h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapseOne-m" class="collapse" role="tabpanel" aria-labelledby="headingOne" style="background-color: ;">
+                                            <div class="card-body" style="border: 1px solid #7acad1;">
+                                            <div class="row">
+                                                    <h6 class="col-6" style="text-align: left;">make up </h6>
+                                                    <h6 class="col-6" style="text-align: right;"> 1.000.000</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                </div>
+                                <!--/.Accordion wrapper-->
+
+                            </div>
+
+                            <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                <!--Accordion wrapper-->
+                                <div class="accordion" id="accordionEx2-m" role="tablist" aria-multiselectable="true">
+
+                                    <!-- Accordion card -->
+                                    <div class="card">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="headingTwo-m" style="background-color: #7acad1;">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx2-m" href="#collapseTwo-m" aria-expanded="false" aria-controls="collapseTwo-m">
+                                                <h5 class="mb-0" style="color: white;">
+                                                    Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                </h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapseTwo-m" class="collapse" role="tabpanel" aria-labelledby="headingTwo-m">
+                                            <div class="card-body">
+                                                <h6>make up + hair</h6>
+                                                <h3 class="my-3"> 1.000.000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                </div>
+                                <!--/.Accordion wrapper-->
+
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-3">
+
+                            <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                <!--Accordion wrapper-->
+                                <div class="accordion" id="accordionEx3-m" role="tablist" aria-multiselectable="true">
+
+                                    <!-- Accordion card -->
+                                    <div class="card">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="headingThree-m" style="background-color: #7acad1;">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx3-m" href="#collapseThree-m" aria-expanded="false" aria-controls="collapseThree-m">
+                                                <h5 class="mb-0" style="color: white;">
+                                                    Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                </h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapseThree-m" class="collapse" role="tabpanel" aria-labelledby="headingThree-m">
+                                            <div class="card-body">
+                                                <h6>make up + hair</h6>
+                                                <h3 class="my-3"> 1.000.000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                </div>
+                                <!--/.Accordion wrapper-->
+
+                            </div>
+
+                            <div class="col-md-5" style=" padding: 1rem; border-radius: 2px;" >
+                                <!--Accordion wrapper-->
+                                <div class="accordion" id="accordionEx4-m" role="tablist" aria-multiselectable="true">
+
+                                    <!-- Accordion card -->
+                                    <div class="card">
+
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="headingFour-m" style="background-color: #7acad1;">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx4-m" href="#collapseFour-m" aria-expanded="false" aria-controls="collapseFour-m">
+                                                <h5 class="mb-0" style="color: white;">
+                                                    Engagment Make Up <i class="fa fa-angle-down rotate-icon"></i>
+                                                </h5>
+                                            </a>
+                                        </div>
+
+                                        <!-- Card body -->
+                                        <div id="collapseFour-m" class="collapse" role="tabpanel" aria-labelledby="headingFour-m">
+                                            <div class="card-body">
+                                                <h6>make up + hair</h6>
+                                                <h3 class="my-3"> 1.000.000</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                </div>
+                                <!--/.Accordion wrapper-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.Panel 2-->
+
+                <!--Panel 3-->
+                <div class="tab-pane fade mt-3" id="panel3-m" role="tabpanel">
+                    <div class="container">
+                        <!--Section: Social newsfeed v.2-->
+                        <section class="pb-3">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-lg-10">
+
+                                    <!--Newsfeed-->
+                                    <div class="mdb-feed">
+
+                                        <!--news-->
+                                        <div class="news">
+
+                                            <!--Label-->
+                                            <div class="row mx-auto">
+                                                <div class="label">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                </div>
+
+                                                <!--Excert-->
+                                                <div class="excerpt">
+
+                                                    <!--Brief-->
+                                                    <div class="brief mx-4">
+                                                        <a class="name">Lili Rose</a>
+                                                        <div class="date">2 days ago</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ml-auto">
+                                                    <p style="font-weight: bold;">Rating</p>
+                                                    <div class="row ml-auto hati-r">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Added text-->
+                                            <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+                                            <!--Feed footer-->
+                                        </div>
+
+                                        <!--news-->
+                                        <hr class="mb-5">
+
+                                        <!--news-->
+                                        <div class="news">
+
+                                            <!--Label-->
+                                            <div class="row mx-auto">
+                                                <div class="label">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                </div>
+
+                                                <!--Excert-->
+                                                <div class="excerpt">
+
+                                                    <!--Brief-->
+                                                    <div class="brief mx-4">
+                                                        <a class="name">Lili Rose</a>
+                                                        <div class="date">2 days ago</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ml-auto">
+                                                    <p style="font-weight: bold;">Rating</p>
+                                                    <div class="row ml-auto hati-r">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!--Added text-->
+                                            <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+                                            <!--Feed footer-->
+                                        </div>
+
+                                        <!--news-->
+                                        <hr class="mb-5">
+
+                                        <!--news-->
+                                        <div class="news">
+
+                                            <!--Label-->
+                                            <div class="row mx-auto">
+
+                                                <div class="label">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                </div>
+
+                                                <!--Excert-->
+                                                <div class="excerpt">
+
+                                                    <!--Brief-->
+                                                    <div class="brief mx-4">
+                                                        <a class="name">Lili Rose</a>
+                                                        <div class="date">2 days ago</div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="ml-auto">
+                                                    <p style="font-weight: bold;">Rating</p>
+                                                    <div class="row ml-auto hati-r">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!--Added text-->
+                                            <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+                                            <!--Feed footer-->
+                                        </div>
+                                        <!--news-->
+                                        <hr class="mb-5">
+
+                                        <!--news-->
+                                        <div class="news mb-5">
+
+                                            <!--Label-->
+                                            <div class="row mx-auto">
+
+                                                <div class="label">
+                                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                                                </div>
+
+                                                <!--Excert-->
+                                                <div class="excerpt">
+
+                                                    <!--Brief-->
+                                                    <div class="brief mx-4">
+                                                        <a class="name">Lili Rose</a>
+                                                        <div class="date">2 days ago</div>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="ml-auto">
+                                                    <p style="font-weight: bold;">Rating</p>
+                                                    <div class="row ml-auto hati-r">
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!--Added text-->
+                                            <div class="added-text  pt-3">Very friendly + open critiques & input</div>
+
+                                            <!--Feed footer-->
+                                        </div>
+                                        <!--news-->
+
+                                    </div>
+                                    <!--Newsfeed-->
+
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                        </section>
+                        <!--Section: Social newsfeed v.2-->
+
+                    </div>
+
+                </div>
+                <!--/.Panel 3-->
+            </div>
+
+        </div>
+
+        <div class="container">
+            <p class="my-3" style="font-weight: bold;">Make Up artist lainnya</p>
+            <hr style="height: .5px !important; background-color: #353333 !important;">
+
+            <div class="container-fluid px-5">
+                <div id="myCar" class="carousel slide" data-ride="carousel" data-interval="9000">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-md-4 col-12 active" align="center">
+                            <img class="img-fluid  mx-auto" style="border: 2px silver solid; border-radius: 50%; padding: 2%;" src="https://yt3.ggpht.com/-s6zMFbmWEkE/AAAAAAAAAAI/AAAAAAAAAAA/rITQsJclzKo/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                            alt="slide 1">
+                            <div class="d-inline-block">
+                                <p class="mb-0 text-sm-center">Lacita Alysia</p>
+                                <p class="text-sm-center"><i class="fa fa-map-marker" aria-hidden="true"></i></i> Malang</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-4 col-12" align="center">
+                            <img class="img-fluid mx-auto" style="border: 2px silver solid; border-radius: 50%; padding: 2%;" src="http://www.harpersbazaar.co.id/lkgallery/photo/5fd55877dacdc0479c3a63ddd3b1636d.jpg"
+                            alt="slide 2">
+                            <div class="d-inline-block">
+                                <p class="mb-0 text-sm-center">Lacita Alysia</p>
+                                <p class="text-sm-center"><i class="fa fa-map-marker" aria-hidden="true"></i></i> Malang</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-4 col-12" align="center">
+                            <img class="img-fluid  mx-auto" style="border: 2px silver solid; border-radius: 50%; padding: 2%;" src="https://instagram.fcgk12-1.fna.fbcdn.net/t51.2885-19/11909932_1702424816658178_1178200921_a.jpg"
+                            alt="slide 3">
+                            <div class="d-inline-block">
+                                <p class="mb-0 text-sm-center">Lacita Alysia</p>
+                                <p class="text-sm-center"><i class="fa fa-map-marker" aria-hidden="true"></i></i> Malang</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-4 col-12" align="center">
+                            <img class="img-fluid mx-auto" style="border: 2px silver solid; border-radius: 50%; padding: 2%;" src="https://instagram.fcgk12-1.fna.fbcdn.net/t51.2885-19/s150x150/14733340_187860101662004_4130833742098857984_a.jpg"
+                            alt="slide 4">
+                            <div class="d-inline-block">
+                                <p class="mb-0 text-sm-center">Lacita Alysia</p>
+                                <p class="text-sm-center"><i class="fa fa-map-marker" aria-hidden="true"></i></i> Malang</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-4 col-12" align="center">
+                            <img class="img-fluid mx-auto" style="border: 2px silver solid; border-radius: 50%; padding: 2%;" src="https://lh3.googleusercontent.com/oKsgcsHtHu_nIkpNd-mNCAyzUD8xo68laRPOfvFuO0hqv6nDXVNNjEMmoiv9tIDgTj8=w170"
+                            alt="slide 5">
+                            <div class="d-inline-block ">
+                                <p class="mb-0 text-sm-center">Lacita Alysia</p>
+                                <p class="text-sm-center"><i class="fa fa-map-marker" aria-hidden="true"></i></i> Malang</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <a class="btn pull-left" id="left" href="#myCar" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a class="btn pull-right" id="right" href="#myCar" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <!--/.Controls-->
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="page-footer center-on-small-only elegant-color mt-5">
+
+            <!--Footer Links-->
+            <div class="container">
+                <div class="row mb-5">
+
+                    <!--First column-->
+                    <div class="col-md-4">
+                        <h6 class="title mb-4 mt-3">Stay Connected</h6>
+                        <!--Facebook-->
+                        <a class="icons-lg"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+                        <!--Twitter-->
+                        <a class="icons-lg"><i class="fa fa-twitter fa-lg white-text mr-md-4"> </i></a>
+                        <!--Google +-->
+                        <a class="icons-lg-ic"><i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i></a>
+                        <!--Linkedin-->
+                        <a class="icons-lg"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+                        <!--Instagram-->
+                    </div>
+                    <!--/.First column-->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!--Second column-->
+                    <div class="col-md-2 col-lg-4 mx-auto">
+                        <h6 class="title mb-4 mt-3 " style="text-align: center;">Be Our Friend</h6>
+
+                        <form style="background-color: white;">
+                            <input type="email" class="form-control pt-0 mb-1" style="background-color: lightgrey; color: #e87072; text-align: center;" placeholder="Email" aria-describedby="basic-addon1">
+                        </form>
+                        <button type="button" style="background-color: #e87072;" class="btn btn-primary mt-2 col-lg-12 mx-0">Subscribe</button>
+
+                    </div>
+                    <!--/.Second column-->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!--Third column-->
+                    <div class="col-md-2 mx-auto">
+                        <h6 class="title mb-2 mt-3">Need Information?</h6>
+                        <p style="font-size: 15px;">
+                            A: Perumahan <br>
+                            P: +62 822 1140 4224 <br>
+                            E: keela@gmail.com <br>
+                        </p>
+                        
+                    </div>
+                    <!--/.Third column-->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                </div>
+            </div>
+            <!--/.Footer Links-->
+
+
+            <!--Copyright-->
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    © 2017 Copyright: <a href="https://www.MDBootstrap.com"> keela.id </a>
+
+                </div>
+            </div>
+            <!--/.Copyright-->
+
+        </footer>
+        <!--/.Footer-->
+
+
+        <!-- /Start your project here-->
+
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/rate.js"></script>
+        <script type="text/javascript">
+            $('#myCar').on('slide.bs.carousel', function (e) {
+
+                var $e = $(e.relatedTarget);
+                var idx = $e.index();
+                var itemsPerSlide = 3;
+                var totalItems = $('.carousel-item').length;
+
+                if (idx >= totalItems - (itemsPerSlide - 1)) {
+                    var it = itemsPerSlide - (totalItems - idx);
+                    for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    } else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+    </script>
+    <!-- Bootstrap tooltips -->
+    
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
